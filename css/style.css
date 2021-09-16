@@ -1,0 +1,596 @@
+:root {
+    /* Primary colors */
+    --Blue: hsl(246, 80%, 60%);
+
+    --Light-red-l: hsl(15, 100%, 70%);
+    --Soft-blue: hsl(195, 74%, 62%);
+    --Light-red: hsl(348, 100%, 68%);
+    --Lime-green: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
+    --Soft-orange: hsl(43, 84%, 65%);
+
+    /* Neutral colors */
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    background-color: var(--Very-dark-blue);
+}
+
+main {
+    display: grid;
+    grid-template-areas: 'aside aside aside work work work play play play study study study'
+        'aside aside aside exercise exercise exercise social social social selfCare selfCare selfCare';
+    grid-gap: 10px;
+    margin: 0 auto;
+    width: 56%;
+    margin-top: 10%;
+    margin-bottom: 30px;
+}
+
+.profile {
+    background-color: var(--Blue);
+    border-radius: 10px 10px 10px 10px;
+    height: 17em;
+    width: 100%;
+}
+
+.profile img {
+    width: 35%;
+    margin: 15px 0 15px 15px;
+    border: 1px solid white;
+    border-radius: 35px;
+
+}
+
+.profile p {
+    margin: 10px 0 0 15px;
+    font-size: 11px;
+    color: var(--Pale-Blue);
+    font-family: 'Rubik', sans-serif;
+}
+
+.profile h1 {
+    margin: 0 0 0 15px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    padding-right: 10px;
+}
+
+aside button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    color: var(--Blue);
+}
+
+aside button:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+aside button:focus {
+    color: #fff;
+}
+
+aside {
+    grid-area: aside;
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 94%;
+    background-color: var(--Dark-blue);
+}
+
+.work {
+    grid-area: work;
+    background-color: var(--Light-red-l);
+    overflow: hidden;
+    border-radius: 15px;
+    width: 100%;
+    height: 90%;
+    margin-left: 10px;
+}
+
+.work img {
+    width: 30%;
+    display: block;
+    margin-left: 110px;
+    margin-top: -10px;
+}
+
+.card1 {
+    background-color: var(--Dark-blue);
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    margin-top: -10px;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.card-down {
+    background-color: var(--Dark-blue);
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px;
+    height: 100%;
+    margin-top: -16px;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.card-social {
+    background-color: var(--Dark-blue);
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px;
+    height: 100%;
+    margin-top: -25px;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.card1:hover {
+    cursor: pointer;
+    background: var(--Blue);
+    color: #fff;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}
+
+.card-social:hover {
+    cursor: pointer;
+    background: var(--Blue);
+    color: #fff;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}
+
+.card-down:hover {
+    cursor: pointer;
+    background: var(--Blue);
+    color: #fff;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}
+.title {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.title p {
+    margin: 0;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 9px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.title button {
+    margin-left: 50%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+#btn-exer {
+    margin-left: 35%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+.title button:hover {
+    cursor: pointer;
+}
+
+.time {
+    margin: 0 auto;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+
+.t {
+    margin: 0;
+    color: var(--Pale-Blue);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    margin-top: 9px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+.play {
+    grid-area: play;
+    background-color: var(--Soft-blue);
+    overflow: hidden;
+    border-radius: 15px;
+    width: 100%;
+    height: 90%;
+    margin-left: 17px;
+}
+
+.play img {
+    width: 30%;
+    display: block;
+    margin-left: 110px;
+    margin-top: -10px;
+}
+
+.study {
+    grid-area: study;
+    background-color: var(--Light-red);
+    overflow: hidden;
+    border-radius: 15px;
+    width: 100%;
+    height: 90%;
+    margin-left: 25px;
+}
+
+.study img {
+    width: 30%;
+    display: block;
+    margin-left: 110px;
+    margin-top: -10px;
+}
+
+.exercise {
+    grid-area: exercise;
+    background-color: var(--Lime-green);
+    overflow: hidden;
+    border-radius: 15px;
+    width: 100%;
+    height: 85%;
+    margin-left: 10px;
+}
+
+.exercise img {
+    width: 30%;
+    display: block;
+    margin-left: 110px;
+}
+
+.social {
+    grid-area: social;
+    background-color: var(--Violet);
+    overflow: hidden;
+    border-radius: 15px;
+    width: 100%;
+    height: 85%;
+    margin-left: 17px;
+}
+
+.social img {
+    width: 30%;
+    display: block;
+    margin-left: 110px;
+    margin-top: -10px;
+}
+
+.selfCare {
+    grid-area: selfCare;
+    background-color: var(--Soft-orange);
+    overflow: hidden;
+    border-radius: 15px;
+    width: 100%;
+    height: 85%;
+    margin-left: 25px;
+}
+
+.selfCare img {
+    width: 30%;
+    display: block;
+    margin-left: 110px;
+    margin-top: -10px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+@media (max-width: 1440px){
+    main {
+        display: grid;
+        grid-template-areas: 'aside aside aside work work work play play play study study study'
+            'aside aside aside exercise exercise exercise social social social selfCare selfCare selfCare';
+        grid-gap: 10px;
+        margin: 0 auto;
+        width: 56%;
+        margin-top: 20%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:1024px){
+    main {
+        display: grid;
+        grid-template-areas: 'aside aside aside work work work play play play study study study'
+            'aside aside aside exercise exercise exercise social social social selfCare selfCare selfCare';
+        grid-gap: 10px;
+        margin: 0 auto;
+        width: 70%;
+        margin-top: 25%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 768px){
+    main {
+        display: grid;
+        grid-template-areas: 'aside aside aside work work work play play play study study study'
+            'aside aside aside exercise exercise exercise social social social selfCare selfCare selfCare';
+        grid-gap: 10px;
+        margin: 0 auto;
+        width: 80%;
+        margin-top: 25%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 425px){
+
+    main {
+        display: grid;
+        grid-template-areas: 'aside'
+            'work'
+            'play'
+            'study'
+            'exercise'
+            'social'
+            'selfCare';
+        grid-gap: 10px;
+        margin: 0 auto;
+        width: 80%;
+        margin-top: 25%;
+        margin-bottom: 30px;
+    
+    }
+
+    .profile {
+        background-color: var(--Blue);
+        border-radius: 10px 10px 10px 10px;
+        height: 10em;
+        width: 100%;
+        display: flex;
+    }
+    
+    .profile img {
+        width: 25%;
+        margin: 35px 0 15px 15px;
+        border: 1px solid white;
+        border-radius: 45px;
+        height: 50%;
+    }
+    
+    .profile p {
+        margin: 10px 0 0 15px;
+        font-size: 11px;
+        color: var(--Pale-Blue);
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    .profile h1 {
+        margin: 0 0 0 15px;
+        color: white;
+        font-size: 30px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 300;
+        padding-right: 10px;
+    }
+    .profile-block{
+        margin-top:35px;
+    }
+    .profile-block2{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    aside {
+        grid-area: aside;
+        padding: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-color: var(--Dark-blue);
+    }
+
+    aside button {
+        align-items: center;
+        justify-content: center;
+        margin-left: 45px;
+        margin-top: 20px;
+        background-color: transparent;
+        border: none;
+        color: var(--Blue);
+    }
+
+    .h{
+        display: flex;
+    }
+
+    .title button {
+        margin-left: 75%;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 18px;
+    }
+    .t {
+        margin: 0;
+        color: var(--Pale-Blue);
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: 10px;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 40px;
+    }
+    .work {
+        grid-area: work;
+        background-color: var(--Light-red-l);
+        overflow: hidden;
+        border-radius: 15px;
+        width: 100%;
+        height: 90%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .work img {
+        width: 30%;
+        display: block;
+        margin-left: 200px;
+        margin-top: -10px;
+    }
+    .card1 {
+        background-color: var(--Dark-blue);
+        border-radius: 10px 10px 0px 0px;
+        padding: 10px;
+        margin-top: -35px;
+        position: relative;
+        margin-bottom: 0;
+    }
+    .card-down {
+        background-color: var(--Dark-blue);
+        border-radius: 10px 10px 0px 0px;
+        padding: 15px;
+        height: 100%;
+        margin-top: -40px;
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    .card-social {
+        background-color: var(--Dark-blue);
+        border-radius: 10px 10px 0px 0px;
+        padding: 15px;
+        height: 100%;
+        margin-top: -65px;
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    .play {
+        grid-area: play;
+        background-color: var(--Soft-blue);
+        overflow: hidden;
+        border-radius: 15px;
+        width: 100%;
+        height: 90%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .play img {
+        width: 30%;
+        display: block;
+        margin-left: 200px;
+        margin-top: -10px;
+    }
+
+    .study {
+        grid-area: study;
+        background-color: var(--Light-red);
+        overflow: hidden;
+        border-radius: 15px;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .study img {
+        width: 30%;
+        display: block;
+        margin-left: 200px;
+        margin-top: -10px;
+    }
+    .exercise {
+        grid-area: exercise;
+        background-color: var(--Lime-green);
+        overflow: hidden;
+        border-radius: 15px;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .exercise img {
+        width: 30%;
+        display: block;
+        margin-left: 200px;
+    }
+
+    #btn-exer {
+        margin-left: 70%;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 18px;
+    }
+
+    .social {
+        grid-area: social;
+        background-color: var(--Violet);
+        overflow: hidden;
+        border-radius: 15px;
+        width: 100%;
+        height: 85%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .social img {
+        width: 30%;
+        display: block;
+        margin-left: 200px;
+        margin-top: -10px;
+    }
+    .selfCare {
+        grid-area: selfCare;
+        background-color: var(--Soft-orange);
+        overflow: hidden;
+        border-radius: 15px;
+        width: 100%;
+        height: 85%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .selfCare img {
+        width: 30%;
+        display: block;
+        margin-left: 200px;
+        margin-top: -10px;
+    }
+}

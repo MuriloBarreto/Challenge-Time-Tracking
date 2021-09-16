@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+
+<body>
+
+  <main>
+    <aside>
+      <div class="profile">
+        <img src="./images/image-jeremy.png" alt="">
+        <div class="profile-block">
+          <p> Report for</p>
+          <h1> Jeremy Robson </h1>
+        </div>
+      </div>
+      <div class="profile-block2">
+        <button type="button" onclick="daily()"> Daily </button>
+        <button type="button" onclick="weekly()"> Weekly </button>
+        <button type="button" onclick="monthly()"> Monthly </button>
+      </div>
+    </aside>
+
+
+    <div class="work">
+      <img src="./images/icon-work.svg" alt="">
+      <div class="card1">
+        <div class="title">
+          <p> Work </p>
+          <button>...</button>
+        </div>
+        <div class="h">
+          <p class="time" id="time-work"> 32hrs </p>
+          <!-- weekly -->
+          <p class="t" id="t-work"> Previous - 36hrs </p>
+          <!-- weekly -->
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="play">
+      <img src="./images/icon-play.svg" alt="">
+      <div class="card1">
+        <div class="title">
+          <p> Play </p>
+          <button>...</button>
+        </div>
+        <div class="h">
+        <p class="time" id="time-play">10hrs</p>
+        <!-- weekly -->
+        <p class="t" id="t-play">Previous - 8hrs</p>
+        <!-- weekly -->
+      </div>
+      </div>
+    </div>
+    <div class="study">
+      <img src="./images/icon-study.svg" alt="">
+      <div class="card1">
+        <div class="title">
+          <p> Study </p>
+          <button>...</button>
+        </div>
+        <div class="h">
+        <p class="time" id="time-study">4hrs</p>
+        <!-- weekly -->
+        <p class="t" id="t-study"> Previous - 7hrs </p>
+        <!-- weekly -->
+      </div>
+      </div>
+    </div>
+
+
+    <div class="exercise">
+      <img src="./images/icon-exercise.svg" alt="">
+      <div class="card-down">
+        <div class="title">
+          <p>Exercise</p>
+          <button id='btn-exer'>...</button>
+        </div>
+        <div class="h">
+        <p class="time" id="time-exercise">4hrs</p>
+        <!-- weekly -->
+        <p class="t" id="t-exercise"> Previous - 5hrs</p>
+        <!-- weekly -->
+      </div>
+      </div>
+    </div>
+
+    <div class="social">
+      <img src="./images/icon-social.svg" alt="">
+      <div class="card-social">
+        <div class="title">
+          <p>Social</p>
+          <button>...</button>
+        </div>
+        <div class="h">
+        <p class="time" id="time-social">5hrs</p>
+        <!-- weekly -->
+        <p class="t" id='t-social'>Previous - 10hrs</p>
+        <!-- weekly -->
+      </div>
+      </div>
+    </div>
+
+
+    <div class="selfCare">
+      <img src="./images/icon-self-care.svg" alt="">
+      <div class="card1">
+        <div class="title">
+          <p>Self Care</p>
+          <button>...</button>
+        </div>
+        <div class="h">
+        <p class="time" id="time-self-care">2hrs</p>
+        <!-- weekly -->
+        <p class="t" id="t-self-care">Previous - 2hrs</p>
+        <!-- weekly -->
+      </div>
+
+      </div>
+    </div>
+
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">MuriloBarreto</a>.
+  </div>
+  <script src="/js/test.js"></script>
+</body>
+
+</html>
